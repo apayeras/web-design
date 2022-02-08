@@ -1,0 +1,115 @@
+div, body, h2, h3, p{
+    padding: 0;
+    margin: 0;
+}
+
+.overlay .bg {
+    background: url(https://www.xtrafondos.com/descargar.php?id=5846&resolucion=3840x2160); 
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: #0009;
+    display: none;
+}
+
+.modal {
+    margin: auto;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.top-options{
+    max-height: 50px;
+    padding: 10px;
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    width: 750px;
+    color: #a22;
+}
+
+.modal-content{
+    width: 700px;
+    padding: 40px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.modal-content h2{
+    font-size: 30px;
+}
+
+.modal-content p{
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.open-modal {
+    padding: 9px 18px;
+    margin: 50px;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0px 0px 25px #0009;
+    border-radius: 4px;
+}
+
+@keyframes aparecer {
+    0%{
+        margin-top: 200px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 300px;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes desaparecer {
+    0%{
+        margin-top: 300px;
+        opacity: 1;
+    }
+    100%{
+        margin-top: 200px;
+        opacity: 0;
+    }
+    
+}
+
+#foto {
+    height: 400px;
+    max-width: 100%;
+    background-color: #000;
+    margin: auto;
+}
+
+.foto-container{
+    display: flex;
+    background: #000;
+    position: relative;
+}
+
+.selector-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, #000c, #0000);
+    height: 70px;
+}
+
+.img-selector {
+    padding: 10px;
+    border: 3px solid #fff;
+    display: inline-block;
+}
